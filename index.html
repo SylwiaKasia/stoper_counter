@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stoper-na-nowo</title>
+    <script src="https://kit.fontawesome.com/9891acd6d5.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <p class="info">
+            <i class="fas fa-question"></i>
+        </p>
+        <h1>Stoper</h1>
+        <p class="stop_watch">0:00</p>
+        <p class="time"></p>
+        <div class="buttons">
+            <button class ="start"><i class="far fa-play-circle"></i></button>            
+            <button class= "stop"><i class="fas fa-stop"></i></button>
+            <button class="pause"><i class="fas fa-pause"></i></button>
+            <button class="reset"><i class="fas fa-window-close"></i></button>
+            <button class="archive">archiwum</button>            
+        </div>
+        <ul class="list_history">
+            
+            
+
+        </ul>
+
+    </div>
+
+    <div class="modal_shadow">
+        <div class="modal">
+            <h3>instrukcja</h3>
+            <p><i class="far fa-play-circle"></i> - play</p>
+            <p><i class="fas fa-stop"></i> - stop</p>
+            <p><i class="fas fa-pause"></i> - pause</p>
+            <p><i class="fas fa-window-close"></i> - close</p>
+            <p><strong>archiwum</strong> - przechowuje historię</p>
+
+            <button class="close_modal">Zamknij</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    
+</body>
+</html>
