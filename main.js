@@ -91,6 +91,17 @@ const clearStoper=()=>{
     
 }
 
+const showModal =()=>{
+    if(!(modalShadow.style.display === "block")){
+        modalShadow.style.display = "block";
+    }
+    else
+    {
+        modalShadow.style.display="none";
+    }
+}
+
+
 
 
 startBtn.addEventListener("click", startStoper);
@@ -98,6 +109,8 @@ stopBtn.addEventListener("click", stopStoper);
 pauseBtn.addEventListener("click", pauseStoper);
 resetBtn.addEventListener("click",resetStoper);
 archiveBtn.addEventListener("click",addToArchivum);
+infoAnswerSign.addEventListener("click", showModal)
+closeBtn.addEventListener("click",showModal);
 
 
 

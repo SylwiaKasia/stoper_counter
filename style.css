@@ -21,8 +21,8 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width:40vw;
-    padding:30px 60px;
+    width:60vw;
+    padding:60px;
     background: rgb(62,9,62);
     background: radial-gradient(circle, rgba(62,9,62,1) 0%, rgba(16,9,54,1) 49%);
     color:white;
@@ -36,6 +36,7 @@ body{
     right:3%;
     padding:15px;
     font-size:20px;
+    cursor: pointer;
 }
 
 h1{
@@ -57,14 +58,14 @@ h1{
 .buttons{
     display: flex;
     flex-wrap: wrap;
-    width:100%;   
+    width:100%;
     justify-content: space-around;        
 }
 
 .buttons button{
-    flex-basis:20%;
-    font-size: 22px;
-    padding:10px;
+    flex-basis:22%;
+    font-size: 30px;
+    padding:18px;
     border-radius: 5px;
     border:1px solid red;
     cursor:pointer;
@@ -86,8 +87,7 @@ h1{
 
 .list_history{
     display:flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
     width:50%;
     margin-top:20px;
@@ -117,7 +117,7 @@ h1{
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
-    width:30%;
+    width:45%;
     padding:20px;
     background-color: white;
     border-radius: 8px;
@@ -154,24 +154,50 @@ h1{
     background-color: rgb(219, 148, 201);
 }
 
-@media(max-width:1024px){
+@media(max-width:1200px){
+
     .wrapper{
-        width:70vw;
+        padding:30px;
     }
 
     .buttons button{
-        flex-basis:30%;
-        margin-bottom:10px;
+        flex-basis:40%;
+        font-size: 22px;
+        margin-bottom: 15px;    
+
     }
 
 }
 
 @media(max-width:910px){
 
+    .list_history{
+        width:70%;
+    }
+}
 
-    .buttons button{
-        flex-basis:40%;
-        margin-bottom:10px;
+
+@media(max-width:768px){
+
+    h1{
+        font-size:40px;
+        margin-bottom: 10px;
+    }
+   
+}   
+
+@media(max-width:590px){
+    .list_history li{
+ 
+        flex-wrap: wrap;
+        margin-bottom:5px;
+        padding:3px;
+    }
+    .close_modal{
+        width:100px;
+        font-size:15px;
     }
 
 }
+
+
